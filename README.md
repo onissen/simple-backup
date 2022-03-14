@@ -15,8 +15,12 @@
  - Die Variable `**$doFileBackup**` muss `true` sein, wenn ein Datei-Backup gemacht werden soll.
  - Die Variable `**$doDBBackup**` muss `true` sein, wenn ein Datenbank-Backup gemacht werden soll.
  - Die `**$BackupLocation**` kann über diese Variable verändert werden.
+<<<<<<< HEAD
  - Im Array **`$directories`** muss (fast) jeder Ordner aufgelistet werden, der gesichert werden soll [Mehr Infos](#sichern-von-ordnern)
  - Im Array **`$`**
+=======
+ - Im Array `**directories**` muss (fast) jeder Ordner aufgelistet werden, der gesichert werden soll [Mehr Infos](#sichern-von-ordnern)
+>>>>>>> f9a306649394e0efe3d662da9399080fae1b1a4a
 
 ### Sichern von Ordnern
 Unter `$directories` können nur Ordner aufgelistet werden, die keine weiteren Unterodner haben.
