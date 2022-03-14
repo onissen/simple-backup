@@ -4,8 +4,7 @@
 - [simple-backup](#simple-backup)
   - [Funktionen](#funktionen)
   - [Anpassen des Programms](#anpassen-des-programms)
-- [- Im Array **`$`**](#--im-array-)
-    - [Sichern von Ordnern](#sichern-von-ordnern)
+    - [Sichern von Ordnern und Dateien](#sichern-von-ordnern-und-dateien)
 
  ## Funktionen
  Mit diesem Skript können Dateien eines Verzeichnisses als Zip-Archiv in ein Unterverzeichnis gesichert werden.
@@ -13,16 +12,14 @@
 
  ## Anpassen des Programms
  In der Datei `config_backup.php` kann der Programmablauf angepasst werden.
- - Die Variable `**$doFileBackup**` muss `true` sein, wenn ein Datei-Backup gemacht werden soll.
- - Die Variable `**$doDBBackup**` muss `true` sein, wenn ein Datenbank-Backup gemacht werden soll.
- - Die `**$BackupLocation**` kann über diese Variable verändert werden.
- - Im Array **`$directories`** muss (fast) jeder Ordner aufgelistet werden, der gesichert werden soll [Mehr Infos](#sichern-von-ordnern)
- - Im Array **`$`**
-=======
- - Im Array `**directories**` muss (fast) jeder Ordner aufgelistet werden, der gesichert werden soll [Mehr Infos](#sichern-von-ordnern)
->>>>>>> f9a306649394e0efe3d662da9399080fae1b1a4a
+ - Die Variable **`$doFileBackup`** muss `true` sein, wenn ein Datei-Backup gemacht werden soll.
+ - Die Variable **`$doDBBackup`** muss `true` sein, wenn ein Datenbank-Backup gemacht werden soll.
+ - Die **`$BackupLocation`** kann über diese Variable verändert werden.
+ - Im Array **`$directories`** muss (fast) jeder Ordner aufgelistet werden, der gesichert werden soll
+ - Im Array **`$files`** können alle Dateien, gesichert werden, die nicht über `$directories` gesichert werden.
 
-### Sichern von Ordnern
+
+### Sichern von Ordnern und Dateien
 Unter `$directories` können nur Ordner aufgelistet werden, die keine weiteren Unterodner haben.
 
 Sollte ein Ordner eines oder mehrere Unterverzeichnisse haben, können alle Unterverzeichnisse ohne weitere Unterordner unter `$directories` gespeichert werden.
