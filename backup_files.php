@@ -26,16 +26,7 @@
                 $zip->addGlob($filePath[$fkey]['ProjectPath'], 0, $options);
             }
             $zip->close();
-            echo "Datei-Backup erstellt";
+            $output = '<div class="alert-success">Datei-Backup erstellt</div>';
         }
-        $zip = new ZipArchive();
-        $zip->open($archiveName);
-        if ($zip->open($archiveName) === TRUE) {
-            $zip->deleteName('companyData/data/');
-            $zip->deleteName('companyData/404.php');
-            
-            echo "funktioniert";
-        }
-        else {echo "funktioniert nicht";}
-        // else {echo "Das Datei-Backup konnte nicht erstellt werden";}
+        else {$output = '<div class="alert-danger">Datei-Backup erstellt</div>';}
 ?>

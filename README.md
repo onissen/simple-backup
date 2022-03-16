@@ -14,9 +14,13 @@
  In der Datei `config_backup.php` kann der Programmablauf angepasst werden.
  - Die Variable **`$doFileBackup`** muss `true` sein, wenn ein Datei-Backup gemacht werden soll.
  - Die Variable **`$doDBBackup`** muss `true` sein, wenn ein Datenbank-Backup gemacht werden soll.
+
  - Die **`$BackupLocation`** kann über diese Variable verändert werden.
  - Im Array **`$directories`** muss (fast) jeder Ordner aufgelistet werden, der gesichert werden soll
  - Im Array **`$files`** können alle Dateien, gesichert werden, die nicht über `$directories` gesichert werden.
+
+ - Wenn ein Datenbank-Backup gemacht werden soll, müssen unter `$dbuser` und `dbpassword` die jeweiligen Werte ausgewählt werden.
+ - Unter `$dbname` muss der Name der zu sichernden Datenbank hinterlegt werden.
 
 
 ### Sichern von Ordnern und Dateien
