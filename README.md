@@ -11,6 +11,8 @@
  Mit diesem Skript können Dateien eines Verzeichnisses als Zip-Archiv in ein Unterverzeichnis gesichert werden.
  Außerdem kann wunschweise auch eine Datenbank (oder eine Datenbanktabelle) gesichert werden.
 
+ Die Backups werden standardmäßig unter einem Unterordner `backups/` abgelegt. Dieser Ordner muss allerdings dann manuell erstellt werden, da sonst das Skript nicht funktioniert.
+
  ## Anpassen des Programms
  In der Datei `config_backup.php` kann der Programmablauf angepasst werden.
  - Die Variable **`$doFileBackup`** muss `true` sein, wenn ein Datei-Backup gemacht werden soll.

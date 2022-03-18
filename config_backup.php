@@ -1,10 +1,10 @@
 <?php
-    $doFileBackup = true;
-    $doDBBackup = true;
+    $doFileBackup = false;
+    $doDBBackup = false;
     
     /* Core Einstellungen für Dateien-Backup */
     
-    $projectPrefix = "companyData"; /* Präfix der normalerweise zum bennenen des $archiveName herangezogen wird. */
+    $projectPrefix = "prefix"; /* Präfix der normalerweise zum bennenen des $archiveName herangezogen wird. */
     
     $archiveName = 'backups/'.'backup_'.$projectPrefix."_".date("d-m-y_H-s-i").".zip";
         /* Der $archivName ist der Aufbau des späteren Namens der Zip-Datei der hier verändert werden könnte. 
@@ -24,23 +24,13 @@
             Hat ein Ordner mehrere Unterordner ohne weitere Unterordner, können diese Unterordner hier mit aufgelistet werden.
             Dann werden die Dateien in den darüber liegenden Ordnern nicht mit gesichert, können aber unter Files hinzugefügt werden.*/
     $directories = array(
-        'assets',
-        "bootstrap",
-        // "companies",
-        "css",
-        "data/hr",
-        "data/svg",
-        "js",
-        "persons",
-        "sass",
-        "templates"
+        
         /* Das /backup Verzeichnis sollte normalerweise nicht in das neue Backup einbezogen werden*/
     );
 
     $files = array(
         array('PackageDir' => '', 'ProjectDir' => '*.*'), /*Hiermit werden die Dateien in der $BackupLocation gespeichert*/
         /* Hier sollten auch Ordner hinterlegt werden, deren Unterverzeichnisse unter $directories berücksichtigt wurden. */
-        array('PackageDir' => 'data/', 'ProjectDir' => 'data/*.*')
     );
 
     /* Core Einstellungen Datenbank-Bachkup */
@@ -48,7 +38,7 @@
     $dbhost = 'localhost'; /* Meistens richtig */
     $dbuser = 'root';
     $dbpassword = '';
-    $dbname = 'intranet';
+    $dbname = '';
     
     $dbFile = "backups/".$dbname."_".date('d-m-y_H-s-i').".sql"; /* Dier Wert kann nach belieben geändert werden, die Endung .sql ist allerdings nötig. */
 ?>
