@@ -1,5 +1,6 @@
+<!-- title: README | simpleBackup-->
 # simple-backup
- A simple php-Script to do File- and Database-Backups
+ Ein einfaches PHP-Script um Datei- und Datenbank-Backups zu erstellen
  
 - [simple-backup](#simple-backup)
   - [Funktionen](#funktionen)

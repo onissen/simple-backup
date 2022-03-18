@@ -1,5 +1,5 @@
 <?php
-    $doFileBackup = false;
+    $doFileBackup = true;
     $doDBBackup = true;
     
     /* Core Einstellungen für Dateien-Backup */

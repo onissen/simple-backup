@@ -10,7 +10,7 @@
 </head>
 
 <?php
-    error_reporting(E_ALL);
+    error_reporting(0);
     date_default_timezone_set('Europe/Berlin');
     
     require('config_backup.php');
@@ -31,6 +31,7 @@
 <body>
     <h1>simple-backup</h1>
     <hr>
+    
     <form action="" method="post">
         <input type="submit" value="Backup starten" name="start">
     </form>
@@ -39,5 +40,10 @@
         echo $output;
     }
     ?></div>
+
+    <footer>
+        <a href="https://github.com/onissen/simple-backup">Diese Repository bei GitHub</a> | <a href="http://intranet.nissen-group.test/company-data/backup/README.html">README öffnen</a><br>
+        &copy; 2022 <a href="http://">onissen</a> | Version 1.0.0
+    </footer>
 </body>
 </html>

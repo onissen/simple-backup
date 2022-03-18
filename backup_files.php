@@ -26,7 +26,7 @@
                 $zip->addGlob($filePath[$fkey]['ProjectPath'], 0, $options);
             }
             $zip->close();
-            $output = '<div class="alert-success">Datei-Backup erstellt</div>';
+            $output .= '<div class="alert-success">Datei-Backup erstellt.<br>Der Dateiname ist '.$archiveName.'</div>';
         }
-        else {$output = '<div class="alert-danger">Datei-Backup erstellt</div>';}
+        else {$output .= '<div class="alert-danger">Datei-Backup erstellt</div>';}
 ?>
