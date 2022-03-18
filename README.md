@@ -12,9 +12,10 @@
  Außerdem kann wunschweise auch eine Datenbank (oder eine Datenbanktabelle) gesichert werden.
 
  Die Backups werden standardmäßig unter einem Unterordner `backups/` abgelegt. Dieser Ordner muss allerdings dann manuell erstellt werden, da sonst das Skript nicht funktioniert.
+ Außerdem ist es nötig, die Datei `config_backup-sample.php` zu dupizieren und in `cofig_backup.php` umzubenennen. In dieser Datei werden dann die Programmparameter angepasst.
 
  ## Anpassen des Programms
- In der Datei `config_backup.php` kann der Programmablauf angepasst werden.
+ In der selbst erstellten Datei `config_backup.php` kann der Programmablauf angepasst werden.
  - Die Variable **`$doFileBackup`** muss `true` sein, wenn ein Datei-Backup gemacht werden soll.
  - Die Variable **`$doDBBackup`** muss `true` sein, wenn ein Datenbank-Backup gemacht werden soll.
 

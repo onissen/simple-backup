@@ -1,3 +1,5 @@
+a, a:link {color: #F7AB00; text-decoration: none;}
+a:hover {text-decoration: underline;}
 body {
     color: #F7AB00;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
