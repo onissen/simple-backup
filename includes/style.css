@@ -23,7 +23,8 @@ input {
     font-size: 30px;
     padding: 10px;
     border: 1px solid #E6A100;
-    border-radius: 5px;   
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .alert-success{
