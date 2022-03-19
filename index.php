@@ -29,9 +29,9 @@
 ?>
 
 <body>
+    <div id="back"><a href="../">Zur übergeordneten Seite</a></div>
     <h1>simple-backup</h1>
     <hr>
-    
     <form action="" method="post">
         <input type="submit" value="Backup starten" name="start">
     </form>
