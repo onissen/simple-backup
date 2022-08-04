@@ -43,7 +43,7 @@
 
     <footer>
         <a href="https://github.com/onissen/simple-backup">Diese Repository bei GitHub</a> | <a href="http://intranet.nissen-group.test/company-data/backup/README.html">README öffnen</a><br>
-        &copy; 2022 <a href="http://">onissen</a> | Version 1.0.0
+        &copy; 2022 <a href="https://github.com/onissen">onissen</a> | Version 1.5
     </footer>
 </body>
 </html>
