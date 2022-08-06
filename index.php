@@ -43,7 +43,7 @@
 
     <footer>
         <a href="https://github.com/onissen/simple-backup">Diese Repository bei GitHub</a> | <a href="README.html">README öffnen</a><br>
-        &copy; 2022 <a href="https://github.com/onissen">onissen</a> | Version 1.5
+        &copy; 2022 <a href="https://github.com/onissen">onissen</a> | Version 2.0
     </footer>
 </body>
 </html>
