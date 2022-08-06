@@ -38,6 +38,22 @@
     $dbuser = 'dbuser';
     $dbpassword = 'dbpass';
     $dbname = 'batabase-name';
+
+    $dumpSettings = array(
+        'include-tables' => array(
+            /* Wenn nicht die komplette Datenbank gesichert werden soll, können hier spezielle Tabllen aufgelistet werden, die gesichert werden sollen. 
+            Alle anderen Tabellen werden nicht gesichert. */
+            
+            /* Beispiel: 'users', 'contacts' */ /* Hier werden nur die Tabllen users und contacts gesichert */
+        ),
+        'exclude-tables' => array(
+            /* Wenn einzelne Tabellen aus der Datenbank nicht gesichert werden sollen, können sie hier aufgelistet werden. 
+            Alle anderen Tabellen der Datenbank würden gesichert werden */
+            
+            /* Beispiel: 'users', 'contacts' */ /* Hier werden alle Tabellen der Datenbank außer der Tabellen users und contancts gesichert. */
+        ),
+    );
+
     
     $dbFile = "backups/".$dbname."_".date('d-m-y_H-i-s').".sql"; /* Dier Wert kann nach belieben geändert werden, die Endung .sql ist allerdings nötig. */
 ?>
