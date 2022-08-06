@@ -26,3 +26,7 @@
 
  - Wenn ein Datenbank-Backup gemacht werden soll, müssen unter `$dbuser` und `$dbpassword` die jeweiligen Werte ausgewählt werden.
  - Unter `$dbname` muss der Name der zu sichernden Datenbank hinterlegt werden.
+
+- Unter `$dumpSettings` können [unterschiedliche Parameter](https://github.com/ifsnop/mysqldump-php#dump-settings) für das Datenbank-Backup verändert werden.
+- Im Array zu `'exclude files'` können einzelne Tabellen ignoriert werden. Die restlichen Tabellen der Datenbank werden gesichert.
+- Im Array zu `'include-files` können einzelne Tabellen zum Backup hinzugefügt werden. Alle anderen Tabellen der Datenbank werden ignoriert.
